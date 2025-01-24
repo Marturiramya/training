@@ -1,0 +1,191 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff0d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;  /* Prevent scrolling */
+}
+
+/* Computer Frame */
+.computer-frame {
+    width: 1300px;  /* Adjust width for the computer frame */
+    height: 850px;  /* Adjust height for the computer frame with the stand */
+    border: 50px solid #333;  /* Dark border to mimic the computer screen frame */
+    border-radius: 20px;  /* Rounded corners for a computer look */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+    background-color: #e6e6e6;  /* Light gray background for the frame */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* To stack the screen and stand */
+    position: relative;
+}
+
+/* Stick Stand */
+.computer-stand {
+    width: 30px;
+    height: 80px;  /* Thin stick stand */
+    background-color: #333;  /* Stand color */
+    position: absolute;
+    bottom: -90px;  /* Position it below the screen */
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Rounded Base */
+.stand-base {
+    width: 700px;
+    height: 90px;
+    background-color: #333;  /* Base color */
+    border-radius: 40%;  /* Makes it round */
+    position: absolute;
+    bottom: -160px;  /* Positions the base below the stand */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the base */
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+/* Container (Inside the Computer Screen) */
+.container {
+    width: 1300px;  /* Fixed width to maintain the box shape */
+    height: 900px;  /* Fixed height to maintain aspect ratio */
+    border-radius: 15px;
+    overflow: hidden;  /* Ensures content stays inside the box */
+    background-color: #fdd835;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    position: relative;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fdd835;  /* Yellow background */
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* Navigation Links (Menu) */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 25px; /* Increased font size for a larger look */
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #d35400; /* Hover effect */
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fdd835;
+    background-image: url('background-pattern.png');
+    background-size: cover;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.text-container {
+    max-width: 50%;
+    color: #842400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Burger Week */
+.burger-week {
+    font-size: 96px; /* Makes "BURGER" larger */
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Aligns "WEEK" below "BURGER" */
+}
+
+.burger {
+    font-size: 120px; /* Makes "BURGER" larger */
+    font-weight: bold;
+}
+
+.week {
+    font-size: 90px; /* Keeps "WEEK" bold but smaller */
+    font-weight: bold;
+}
+
+/* Image Container */
+.image-container {
+    max-width: 200%;
+    height: 100%; /* Makes the image container take full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;  /* No background color */
+    border: 0cm;
+
+}
+
+.burger-combo {
+    width: 100%;  /* Image takes full width of container */
+    max-width: 1000px;  /* Limit the size */
+    height: auto;  /* Maintain aspect ratio */
+    border: none;  /* Remove border */
+    box-shadow: none;  /* Remove any shadow */
+    border-radius: 0;  /* Remove border-radius */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7e3b8;
+    color: #333;
+    font-size: 14px;
+}
+
+.delivery {
+    background-color: #c0392b;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Content Positioning */
+.content {
+    text-align: center;
+    position: absolute;
+    top: 100%; /* Adjusted to move the text higher */
+    width: 100%;
+}
