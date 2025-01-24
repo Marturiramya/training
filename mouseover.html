@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Over Events</title>
+  <style>
+    div {
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div>red</div>
+  <div>green</div>
+  <div>yellow</div>
+  <div>teal</div>
+  <div>orange</div>
+  <div>blue</div>
+
+  <script>
+    // Select all div elements
+    const divs = document.querySelectorAll("div");
+
+    // Add event listeners to each div
+    divs.forEach(div => {
+      const originalColor = div.style.backgroundColor; // Store the original background color
+      div.addEventListener("mouseover", () => {
+        div.style.backgroundColor = div.textContent; // Set background to the text color
+      });
+      div.addEventListener("mouseout", () => {
+        div.style.backgroundColor = originalColor; // Reset to the original background
+      });
+    });
+  </script>
+</body>
+</html>
