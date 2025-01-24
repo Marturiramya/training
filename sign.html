@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+    }
+
+    /* Container Styling */
+    .signup-container {
+      width: 380px; /* Precise width */
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .signup-container h2 {
+      font-size: 22px; /* Precise heading size */
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px; /* Spacing below heading */
+    }
+
+    /* Input Fields */
+    .input-group {
+      position: relative;
+      margin-bottom: 18px; /* Spacing between fields */
+    }
+
+    .input-group input {
+      width: calc(100% - 50px); /* Adjust input width to account for icon */
+      padding: 12px 15px; /* Top/Bottom and Side padding */
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      padding-left: 45px; /* Space for the left icon */
+    }
+
+    .input-group input:focus {
+      border-color: #6e8efb;
+    }
+
+    .input-group i {
+      position: absolute;
+      top: 50%;
+      left: 15px; /* Distance from the left */
+      transform: translateY(-50%);
+      font-size: 18px; /* Icon size */
+      color: #aaa;
+    }
+
+    /* Forgot Password Link */
+    .forgot-password {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    .forgot-password a {
+      font-size: 12px;
+      color: #6e8efb;
+      text-decoration: none;
+    }
+
+    .forgot-password a:hover {
+      text-decoration: underline;
+    }
+
+    /* Signup Button */
+    .signup-btn {
+      width: 100%; /* Full width button */
+      padding: 14px; /* Padding inside button */
+      background: linear-gradient(90deg, #6e8efb, #a777e3);
+      color: #fff;
+      font-size: 16px; /* Button font size */
+      font-weight: bold;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .signup-btn:hover {
+      background: linear-gradient(90deg, #a777e3, #6e8efb);
+    }
+
+    /* Social Signup Section */
+    .social-signup {
+      margin-top: 15px;
+    }
+
+    .social-signup p {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Equal spacing between icons */
+    }
+
+    .social-icons a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f5f5f5;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      background: #e0e0e0;
+    }
+
+    .social-icons i {
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Signup</h2>
+    <form>
+      <!-- Username Field -->
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Username" required>
+      </div>
+      <!-- Email Field -->
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Email" required>
+      </div>
+      <!-- Password Field -->
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password" required>
+      </div>
+      <!-- Phone Number Field -->
+      <div class="input-group">
+        <i class="fas fa-phone"></i>
+        <input type="tel" placeholder="Phone Number" required>
+      </div>
+      <!-- Forgot Password -->
+      <div class="forgot-password">
+        <a href="#">Forgot password?</a>
+      </div>
+      <!-- Signup Button -->
+      <button type="submit" class="signup-btn">Sign Up</button>
+    </form>
+    <div class="social-signup">
+      <p>Or Sign Up Using</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-google"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
